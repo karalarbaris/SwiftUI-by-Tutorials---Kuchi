@@ -49,6 +49,7 @@ struct ChoicesView : View {
       let dismissButton = Alert.Button.default(Text("OK")) {
         isChallengeResultAlertDisplayed = false
       }
+        
       
       alert = Alert(
         title: Text("Oh no!"),
