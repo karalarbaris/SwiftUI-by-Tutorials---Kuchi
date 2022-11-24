@@ -17,6 +17,14 @@
 		57578FE924E9D943003465A4 /* jp.json in Resources */ = {isa = PBXBuildFile; fileRef = 57578FAF24E9D943003465A4 /* jp.json */; };
 		57EF341324E89F92004ABEB2 /* KuchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF340024E89F91004ABEB2 /* KuchiApp.swift */; };
 		57EF341424E89F92004ABEB2 /* KuchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF340024E89F91004ABEB2 /* KuchiApp.swift */; };
+		B9702402292F422A00477979 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97023FF292F422A00477979 /* Color+Extension.swift */; };
+		B9702403292F422A00477979 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97023FF292F422A00477979 /* Color+Extension.swift */; };
+		B9702404292F422A00477979 /* LocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9702400292F422A00477979 /* LocalNotifications.swift */; };
+		B9702405292F422A00477979 /* LocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9702400292F422A00477979 /* LocalNotifications.swift */; };
+		B9702406292F422A00477979 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9702401292F422A00477979 /* Appearance.swift */; };
+		B9702407292F422A00477979 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9702401292F422A00477979 /* Appearance.swift */; };
+		B970240A292F43AF00477979 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9702409292F43AE00477979 /* SettingsView.swift */; };
+		B970240B292F43AF00477979 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9702409292F43AE00477979 /* SettingsView.swift */; };
 		B9A833482923943E007D4103 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A833472923943E007D4103 /* WelcomeView.swift */; };
 		B9A833492923943E007D4103 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A833472923943E007D4103 /* WelcomeView.swift */; };
 		B9A8334E2923DBC5007D4103 /* HorizontallyAlignedLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A8334D2923DBC5007D4103 /* HorizontallyAlignedLabelStyle.swift */; };
@@ -70,6 +78,10 @@
 		57EF340F24E89F92004ABEB2 /* Kuchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kuchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57EF341124E89F92004ABEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57EF341224E89F92004ABEB2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		B97023FF292F422A00477979 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		B9702400292F422A00477979 /* LocalNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotifications.swift; sourceTree = "<group>"; };
+		B9702401292F422A00477979 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		B9702409292F43AE00477979 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B9A833472923943E007D4103 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		B9A8334D2923DBC5007D4103 /* HorizontallyAlignedLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontallyAlignedLabelStyle.swift; sourceTree = "<group>"; };
 		B9A833542924BE1B007D4103 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
@@ -141,11 +153,13 @@
 		57EF33FF24E89F91004ABEB2 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B9702408292F436300477979 /* Settings */,
 				B9E2AA19292BC5D10033E8EF /* HistoryView.swift */,
 				B9E2AA18292BC5D10033E8EF /* StarterView.swift */,
 				B9F1BC232927BE0A0097CE80 /* Practice */,
 				B9A833532924BE1B007D4103 /* Profile */,
 				B9A83343292392EA007D4103 /* Welcome */,
+				B97023FE292F422A00477979 /* Utils */,
 				57578FA724E9D943003465A4 /* HomeView.swift */,
 				57EF340024E89F91004ABEB2 /* KuchiApp.swift */,
 				57578FA924E9D943003465A4 /* Resources */,
@@ -177,6 +191,24 @@
 				57EF341224E89F92004ABEB2 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		B97023FE292F422A00477979 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B97023FF292F422A00477979 /* Color+Extension.swift */,
+				B9702400292F422A00477979 /* LocalNotifications.swift */,
+				B9702401292F422A00477979 /* Appearance.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B9702408292F436300477979 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B9702409292F43AE00477979 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		B9A83343292392EA007D4103 /* Welcome */ = {
@@ -327,10 +359,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9702404292F422A00477979 /* LocalNotifications.swift in Sources */,
 				B9A8336829251E90007D4103 /* RegisterView.swift in Sources */,
 				57EF341324E89F92004ABEB2 /* KuchiApp.swift in Sources */,
 				B9A833592924BE1B007D4103 /* Profile.swift in Sources */,
 				B9F1BC332927BE0A0097CE80 /* PracticeView.swift in Sources */,
+				B9702406292F422A00477979 /* Appearance.swift in Sources */,
 				B9A833482923943E007D4103 /* WelcomeView.swift in Sources */,
 				B9A83365292519C5007D4103 /* WelcomeMessageView.swift in Sources */,
 				B9A8336229251992007D4103 /* LogoImage.swift in Sources */,
@@ -349,6 +383,8 @@
 				B9F1BC2B2927BE0A0097CE80 /* ChoicesView.swift in Sources */,
 				B9F1BC372927BE0A0097CE80 /* ChoicesRow.swift in Sources */,
 				B9A8336B29262598007D4103 /* BorderViewModifier.swift in Sources */,
+				B9702402292F422A00477979 /* Color+Extension.swift in Sources */,
+				B970240A292F43AF00477979 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,10 +392,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9702405292F422A00477979 /* LocalNotifications.swift in Sources */,
 				B9A8336929251E90007D4103 /* RegisterView.swift in Sources */,
 				57EF341424E89F92004ABEB2 /* KuchiApp.swift in Sources */,
 				B9A8335A2924BE1B007D4103 /* Profile.swift in Sources */,
 				B9F1BC342927BE0A0097CE80 /* PracticeView.swift in Sources */,
+				B9702407292F422A00477979 /* Appearance.swift in Sources */,
 				B9A833492923943E007D4103 /* WelcomeView.swift in Sources */,
 				B9A83366292519C5007D4103 /* WelcomeMessageView.swift in Sources */,
 				B9A8336329251992007D4103 /* LogoImage.swift in Sources */,
@@ -378,6 +416,8 @@
 				B9F1BC2C2927BE0A0097CE80 /* ChoicesView.swift in Sources */,
 				B9F1BC382927BE0A0097CE80 /* ChoicesRow.swift in Sources */,
 				B9A8336C29262598007D4103 /* BorderViewModifier.swift in Sources */,
+				B9702403292F422A00477979 /* Color+Extension.swift in Sources */,
+				B970240B292F43AF00477979 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
